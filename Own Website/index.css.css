@@ -1,0 +1,403 @@
+@media screen and (max-width: 768px) {
+    .intro-text h1 {
+        font-size: 1.5em; /* Adjust font sizes */
+    }
+    .header-container ul {
+        flex-direction: column; /* Stack navigation links */
+    }
+}
+
+:root{
+    --navy-blue: #0A1128;
+    --dark-blue: #001F54;
+    --blue: #034078;
+    --light-blue: #1282A2;
+    --white: #FEFCFB;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #0A1128, #001F54 25%, #034078 50%, #1282A2 75%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.header-container {
+    background-color: var(--navy-blue); /* Adjust as needed */
+}
+
+header ul {
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+header ul li a {
+    font-family: 'Poppins';
+    color: var(--white);
+    text-decoration: none;
+}
+
+main {
+    display: inline-block;
+}
+.intro {
+    display: flex; /* Align children (text + image) horizontally */
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space between text and image */
+    margin: 70px;
+    gap: 30px; /* Add some space between text and image */
+}
+
+.intro-text {
+    flex: 1; /* Allow text section to take available space */
+}
+
+.intro-img img {
+    width: 400px; /* Adjust image size */
+}
+
+.intro-text h3 {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    color: var(--white);
+    font-size: 20px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.intro-text h1 {
+    color: var(--light-blue);
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0%;
+    padding: 0%;  
+}
+
+.intro-text p {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    color: var(--white);
+    font-size: 20px;
+    padding: 0%;
+    margin: 0px 0px 20px 0px;
+}
+
+.intro-text .soc-med i {
+    margin: 0px 10px 30px 0px;
+}
+
+.intro-text button {
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 18px;
+    background-color: var(--blue);
+    border: 2px solid var(--light-blue);
+    border-radius: 5px;
+    padding: 3px 10px 3px 10px;
+}
+
+.about-me {
+    margin-bottom: 70px;
+}
+
+.about-me h1{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--light-blue);
+    text-align: left;
+    margin: 0px 0px 10px 70px;
+}
+
+.about-me-text {
+    margin: 0px 70px 0px 70px;
+    border: 3px solid var(--blue);
+    border-radius: 40px;
+}
+
+.about-me-text p {
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    color: var(--white);
+    margin: 20px 40px 10px 40px;
+}
+
+.about-me-text .tech-stack h2 {
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--light-blue);
+    margin-left: 40px;
+}
+
+.tech-stack img {
+    background-color: var(--white);
+    border: 3px solid var(--light-blue);
+    border-radius: 10px;
+    margin: 0px 30px 0px 0px;
+    width: 60px;
+    height: auto;
+}
+
+.tech-stack .tech-stack-img {
+    margin-left: 140px;
+}
+
+.about-me-text .experience h2 {
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--light-blue);
+    margin-left: 40px;
+}
+
+.about-me-text .experience ul {
+    padding-left: 0;
+}
+
+.about-me-text .experience ul li {
+    position: relative;
+    margin: 10px 500px 50px 350px;
+    padding-left: 25px;
+
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-me-text .experience ul li::before {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    font-size: 20px; 
+    transform: translateX(-200px);
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/bullet-point.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about-me-text .experience ul li h3 {
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.about-me-text .experience ul li h3, 
+.about-me-text .experience ul li p {
+    margin: 0%;
+}
+
+.workplace {
+    color: var(--light-blue);
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds spacing between items */
+    margin: 0 70px; /* Adjust the outer margin */
+}
+
+.portfolio h1 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--light-blue);
+    text-align: left;
+    margin: 0px 0px 10px 0px;
+}
+
+.portfolio-ex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px; 
+    margin: 0;
+    border: 3px solid var(--navy-blue);
+    border-radius: 10px;
+    background-color: var(--blue);
+    padding: 10px;
+}
+
+.portfolio .portfolio-ex {
+    display: flex;
+    flex-direction: column; /* Make each .portfolio-ex stack its contents (image, h4, p) */
+    width: 360px;
+    margin: 0;
+    border: 3px solid var(--navy-blue);
+    border-radius: 10px;
+    background-color: var(--blue);
+    padding: 10px;
+}
+
+.portfolio .portfolio-ex img {
+    margin: 20px;
+    object-fit: cover;
+    overflow: hidden;
+    width: 320px;
+    height: 160px;
+}
+
+.portfolio-ex-container {
+    display: flex; /* Align portfolio-ex items beside each other */
+    gap: 50px; /* Adds spacing between .portfolio-ex items */
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio-ex h4 {
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 0%;
+    margin: 0px 0px 10px 20px;
+}
+
+.portfolio .portfolio-ex p {
+    color: var(--white);
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+    padding: 0%;
+    margin: 0px 0px 10px 20px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.contact h1 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--dark-blue);
+    text-align: left;
+    margin: 0px 0px 10px 70px;
+}
+
+.contact p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--dark-blue);
+    text-align: left;
+    margin: 0px 0px 10px 70px;
+    text-align: center;
+}
+
+.contact .contact-form {
+    display: grid;
+    gap: 20px;
+    background: transparent; /* Ensure no white background */
+    padding: 20px; /* Optional: Add padding if needed */
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.contact .contact-form .form-group {
+    display: flex;
+    gap: 20px; /* Space between groups */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    flex: 1; /* Ensure even distribution */
+    min-width: 140px; /* Minimum width for smaller screens */
+}
+
+.contact .contact-form label {
+    font-family: 'Poppins';
+    font-size: 17px;
+    color: var(--white);
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+    width: 100%; /* Ensures inputs stretch to the parent container */
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    line-height: 20px; /* Match font-size to avoid extra spacing */
+    padding: 5px 0; /* Fine-tuned padding for better spacing */
+    border: none;
+    border-bottom: 2px solid var(--white);
+    background: transparent;
+    color: var(--white);
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+.contact .contact-form input::placeholder,
+.contact .contact-form textarea::placeholder {
+    color: var(--white); /* Placeholder text color */
+    opacity: 0.8; /* Optional: Slightly dim the placeholder text */
+}
+
+.button-container {
+    text-align: center;
+}
+
+.send-btn {
+    background-color: transparent; 
+    color: #fff; 
+    font-family: 'Roboto Mono';
+    padding: 10px 30px;
+    border: 3px solid var(--white);
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: var(--dark-blue); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.social-icons {
+    margin: 0px 0px 30px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 1000px 10px;
+}
+
+footer p {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: var(--white);
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
